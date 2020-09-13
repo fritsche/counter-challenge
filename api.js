@@ -1,11 +1,14 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 
-const app = express()
 const PORT = process.env.PORT || 5000
 const DBURL = process.env.DBURL || 'mongodb://localhost/'
 
 mongoose.connect(DBURL + 'counter?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+
+const app = express()
+app.use(cors())
 
 const counterSchema = new mongoose.Schema({
     value: Number,
