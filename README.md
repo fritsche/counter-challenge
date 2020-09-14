@@ -6,10 +6,10 @@ The simplest possible app.
 
 Build an end-to-end app, as simple as possible, using JavaScript.
 
-- Node API
-- Web client
-- Mobile client
-- Desktop client
+- Node API (https://counterchallenge.herokuapp.com/)
+- Web client (https://fritsche.github.io/counter-challenge/)
+- Mobile client (coming soon)
+- Desktop client (coming soon)
 
 ## The application
 
